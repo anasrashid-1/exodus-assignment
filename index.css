@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(121, 133, 133);
+}
+
+
+
+/* header section designing for larger screens */
+/* -------------header section starts here---------------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    margin-right: 20px;
+}
+
+#logo img {
+    width: 140px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(91, 106, 106);
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+#contact-number {
+    padding: 10px;
+    margin: 20px;
+}
+
+.phone-icon-container {
+    display: inline-block;
+    background-color: rgb(0, 168, 182);
+    padding: 10px 13px;
+    margin-right: 7px;
+    border-radius: 50%;
+}
+
+.phone-icon-container i {
+    font-size: 28px;
+    color: white;
+}
+
+#contact-button {
+    background-color: rgb(0, 168, 182);
+    height: 40px;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+/* ------------------ header section ends here ---------------------*/
+
+
+
+/* section 1 for main image and centered centered container */
+
+/* ---------------------- section 1 starts here -----------------------*/
+.main-image-section-container {
+    position: relative;
+    text-align: center;
+}
+
+.background-image {
+    width: 100%;
+}
+
+.centered-container {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    background-color: rgba(55, 62, 62, 0.8);
+    color: white;
+    width: 50%;
+    padding: 4px 6px;
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+    text-align: center;
+    font-size: larger;
+}
+
+/* page-desc-form-sec */
+
+/* desc-container */
+.desc-container p {
+    font-size: larger;
+}
+
+.desc-container h1 {
+    font-size: xx-large;
+}
+/* ---------------------- section 1 ends here --------------------------*/
+
+
+
+
+
+/* section 2 for description and form */
+/*  -------------------section 2 starts here ----------------------- */
+/* contact-number-container */
+.contact-number-container {
+    border: 1px solid rgb(206, 218, 218);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.desc-form-container {
+    display: grid;
+    grid-template-columns: 63% 30%;
+    gap: 3%;
+    justify-content: center;
+}
+
+/* for desc text */
+#show-more-text {
+    display: inline;
+}
+
+#show-more-btn {
+    display: none;
+}
+
+.form-container {
+    display: block;
+    margin: auto;
+    background-color: rgb(55, 62, 62);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-container h3 {
+    color: white;
+}
+
+#form-contact-number {
+    color: rgb(0, 168, 182);
+    ;
+}
+
+.form-container form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form-input {
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 8px;
+    resize: vertical;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-select {
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    background-color: rgb(0, 168, 182);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+}
+
+.form-button:hover {
+    background-color: rgb(67, 159, 168);
+}
+
+.form-link {
+    color: white;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+.required-field {
+    color: #ff0000;
+}
+/* ------------------------------------ section 2 ends here ------------------------------------- */
+
+
+/* media query form medium screens */
+@media (max-width: 768px) {
+    /* -------- for header ----------- */
+    header {
+        font-size: medium;
+    }
+    nav a {
+        display: none;
+    }
+    #menu-icon {
+        display: flex;
+        background-color: rgb(55, 62, 62);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    #contact-number span:nth-child(2) {
+        display: none;
+    }
+    
+    #contact-button {
+        display: none;
+    }
+    #logo img {
+        width: 110px;
+    }
+    #nav-icon-search,
+    #nav-icon-heart {
+        border: 1px solid grey;
+        padding: 9px;
+        border-radius: 50%;
+        display: block;
+        margin-right: -8px;
+    }
+    .phone-icon-container {
+        padding: 6px 9px;
+        margin-right: -10px;
+    }
+
+    /* ---------------- first section ----------------- */
+    .background-image {
+        height: 230px;
+    }
+    .centered-container {
+        top: 12%;
+        left: 5%;
+        width: 90%;
+        font-size: medium;
+    }
+
+
+
+    /* ------------------ 2nd section page-desc-form-sec --------------*/
+    .desc-form-container {
+        grid-template-columns: 90%;
+    }
+    /* for read more text */
+    #show-more-text {
+        display: none;
+    }
+    #show-more-btn {
+        display: inline;
+        text-align: center;
+        color: rgb(0, 168, 182);
+    }
+}
+
+/* media queries for smaller screens */
+@media (max-width: 480px) {
+
+    /* ----------------- for first section --------------- */
+    .centered-container {
+        top: 45%;
+        left: 5%;
+        width: 90%;
+        font-size: xx-small;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    /* for header */
+    #menu-icon {
+        display: flex;
+        background-color: rgb(55, 62, 62);
+        padding: 2px;
+        border-radius: 5px;
+    }
+    #logo img {
+        width: 100px;
+    }
+    #nav-icon-search,
+    #nav-icon-heart {
+        border: 1px solid grey;
+        padding: 4px;
+        border-radius: 50%;
+        display: block;
+        margin-right: -10px;
+    }
+    .phone-icon-container {
+        padding: 4px 6px;
+        margin-right: -10px;
+    }
+    .phone-icon-container i {
+        font-size: 18px;
+        color: white;
+    }
+}
