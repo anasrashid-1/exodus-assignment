@@ -90,11 +90,6 @@ Font Awesome for providing icon assets.
   5. Click "Show Less" button.
   6. Assert additional text is hidden.
 
-### Demo Videos
-
-- [Mobile Demo](demo-videos/mobile.gif)
-- [Desktop Demo](demo-videos/desktop.gif)
-
 **Note:**
 - Testing utilizes Cypress for end-to-end (E2E) testing.
 - Ensure the application is running on a testable environment before running tests.
