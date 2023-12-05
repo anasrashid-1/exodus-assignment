@@ -10,9 +10,6 @@
 7. Event Handling
 8. Credits
 
-## Demo
-![Demo 1](demo-videos/mobile.gif)
-![Demo 2](demo-videos/desktop.gif)
 
 
 1. Introduction
